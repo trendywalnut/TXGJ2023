@@ -1464,6 +1464,14 @@ PrefabInstance:
       propertyPath: m_text
       value: Name Your Character!
       objectReference: {fileID: 0}
+    - target: {fileID: 6668669939965976408, guid: 117861ac04064e94a93cd15e8245b6fd, type: 3}
+      propertyPath: m_fontSize
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 6668669939965976408, guid: 117861ac04064e94a93cd15e8245b6fd, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 36
+      objectReference: {fileID: 0}
     - target: {fileID: 7212712176000948313, guid: 117861ac04064e94a93cd15e8245b6fd, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1530,6 +1538,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7614443157855975661, guid: 117861ac04064e94a93cd15e8245b6fd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1570990687}
+    - targetCorrespondingSourceObject: {fileID: 8106441852396644844, guid: 117861ac04064e94a93cd15e8245b6fd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1570990691}
   m_SourcePrefab: {fileID: 100100000, guid: 117861ac04064e94a93cd15e8245b6fd, type: 3}
 --- !u!1 &1570990686 stripped
 GameObject:
@@ -1572,6 +1583,35 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1846564846382809240, guid: 117861ac04064e94a93cd15e8245b6fd, type: 3}
   m_PrefabInstance: {fileID: 1570990685}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1570990689 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8106441852396644844, guid: 117861ac04064e94a93cd15e8245b6fd, type: 3}
+  m_PrefabInstance: {fileID: 1570990685}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1570990690 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8091554725489922870, guid: 117861ac04064e94a93cd15e8245b6fd, type: 3}
+  m_PrefabInstance: {fileID: 1570990685}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570990689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1570990691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570990689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edcf35514abab643b34de43c2316a7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  advanceButton: {fileID: 1570990690}
 --- !u!1 &1617927627
 GameObject:
   m_ObjectHideFlags: 0
