@@ -15,12 +15,6 @@ public class FontSlider : MonoBehaviour
         ValueSlider.onValueChanged.AddListener(delegate { OnSliderValueChanged(); });
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void OnSliderValueChanged()
     {
         var newFontSize = ValueSlider.value;
