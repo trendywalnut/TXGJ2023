@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class CaptchaSlots : MonoBehaviour
 {
@@ -11,13 +12,13 @@ public class CaptchaSlots : MonoBehaviour
 
     private float currentSpinLength;
 
-    private int listIndex;
+    public int listIndex;
+    public bool rolling = false;
 
-    void Start()
+    private void Start()
     {
-        
+        rolling = true;
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -27,19 +28,21 @@ public class CaptchaSlots : MonoBehaviour
     public void SpinSlots(float spinLength)
     {
         currentSpinLength = 0;
-        listIndex = 0;
+        listIndex = Random.Range(0, slotSprites.Length-1);
         StartCoroutine(SlotCoroutine(spinLength));
     }
 
     IEnumerator SlotCoroutine(float spinLength)
     {
+        rolling = true;
         foreach(GameObject sprite in slotSprites)
         {
             sprite.SetActive(false);
         }
         slotSprites[listIndex = (listIndex+1)%slotSprites.Length].SetActive(true);
-        yield return new WaitForSeconds(0.3f);
-        currentSpinLength += 0.3f;
+        yield return new WaitForSeconds(0.1f);
+        rolling = false;
+        currentSpinLength += 0.1f;
         if(currentSpinLength <= spinLength)
         {
             StartCoroutine(SlotCoroutine(spinLength));
