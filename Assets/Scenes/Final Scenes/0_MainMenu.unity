@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedX: 0
-  speedY: 1
+  speedY: 2
   amplitude: 5
 --- !u!1 &447097870 stripped
 GameObject:
@@ -253,7 +253,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: 7ad61f49a532f77429afc90f36bf7c1b, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 0
+  m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
 --- !u!224 &496362566 stripped
@@ -754,8 +754,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -208.2, y: -106.9}
-  m_SizeDelta: {x: 78.9302, y: 85.8692}
+  m_AnchoredPosition: {x: -213.72072, y: -112.90605}
+  m_SizeDelta: {x: 67.8888, y: 73.8571}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2104875266
 MonoBehaviour:
@@ -808,7 +808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedX: 0
-  speedY: 2
+  speedY: 3
   amplitude: 5
 --- !u!1001 &8980002450264579720
 PrefabInstance:
