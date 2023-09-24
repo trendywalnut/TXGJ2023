@@ -9483,7 +9483,7 @@ MonoBehaviour:
   - {fileID: 1197621581}
   - {fileID: 1282444599}
   _Camera: {fileID: 364750269}
-  _BallDropMoveSpeed: 50
+  _BallDropMoveSpeed: 5
   _DropButton: {fileID: 1933920125}
 --- !u!1001 &1065739770
 PrefabInstance:
