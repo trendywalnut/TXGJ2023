@@ -13,6 +13,9 @@ public class PachinkoBall : MonoBehaviour
     [SerializeField]private float bumpForce;
     [SerializeField] bool hasBallMoved;
 
+    [SerializeField] private AudioSource _as;
+    [SerializeField] private AudioClip bumpSFX;
+
     private void Start() 
     {
         difficultyText = GameObject.Find("DifficultyText").GetComponent<TextMeshProUGUI>();
@@ -32,6 +35,10 @@ public class PachinkoBall : MonoBehaviour
         if (rb.velocity != Vector2.zero){
             hasBallMoved = true;
         }        
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        _as.PlayOneShot(bumpSFX);
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
