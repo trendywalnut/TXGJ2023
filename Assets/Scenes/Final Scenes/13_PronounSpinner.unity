@@ -136,6 +136,8 @@ GameObject:
   - component: {fileID: 58686682}
   - component: {fileID: 58686681}
   - component: {fileID: 58686684}
+  - component: {fileID: 58686685}
+  - component: {fileID: 58686686}
   m_Layer: 5
   m_Name: confirm button
   m_TagString: Untagged
@@ -206,7 +208,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 58686682}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 552729123}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: PlayUIClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &58686682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,6 +272,103 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   advanceButton: {fileID: 58686681}
+--- !u!114 &58686685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58686679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 552729123}
+          m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+          m_MethodName: PlayUIHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2051232602}
+          m_TargetAssemblyTypeName: GenericButtonTweener, Assembly-CSharp
+          m_MethodName: OnHoverEnterTween
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 58686681}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2051232602}
+          m_TargetAssemblyTypeName: GenericButtonTweener, Assembly-CSharp
+          m_MethodName: OnHoverExitTween
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 58686681}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &58686686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58686679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111f2216bbce6ce4e8f17d64c06d38ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonHoverScale: 1.12
+  ButtonHoverScaleTime: 0.2
+  ButtonRotateAmount: 0
+  ButtonHoverScaleCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  audioSource: {fileID: 0}
 --- !u!114 &329695201 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114361574848870256, guid: 160be82451391f6448834ec65286e007, type: 3}
@@ -518,6 +629,8 @@ GameObject:
   - component: {fileID: 552729118}
   - component: {fileID: 552729117}
   - component: {fileID: 552729121}
+  - component: {fileID: 552729123}
+  - component: {fileID: 552729122}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -628,6 +741,118 @@ MonoBehaviour:
   spinButton: {fileID: 2051232598}
   confirmButton: {fileID: 58686679}
   pickerWheel: {fileID: 329695201}
+--- !u!82 &552729122
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552729116}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &552729123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552729116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f46a9883b36868440b3f1e1fa7d1957a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIHover: {fileID: 8300000, guid: b4f6614e09249ac4297c4d3629295915, type: 3}
+  UIClick: {fileID: 8300000, guid: cdd682850c67f4f48b841e9ecdee21f3, type: 3}
+  UI: {fileID: 0}
+  _as: {fileID: 552729122}
 --- !u!1001 &665178785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1197,6 +1422,8 @@ GameObject:
   - component: {fileID: 2051232600}
   - component: {fileID: 2051232599}
   - component: {fileID: 2051232598}
+  - component: {fileID: 2051232601}
+  - component: {fileID: 2051232602}
   m_Layer: 5
   m_Name: Spin Button
   m_TagString: Untagged
@@ -1267,7 +1494,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2051232599}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 552729123}
+        m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+        m_MethodName: PlayUIClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2051232599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1306,6 +1545,103 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051232596}
   m_CullTransparentMesh: 1
+--- !u!114 &2051232601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051232596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 552729123}
+          m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
+          m_MethodName: PlayUIHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2051232602}
+          m_TargetAssemblyTypeName: GenericButtonTweener, Assembly-CSharp
+          m_MethodName: OnHoverEnterTween
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2051232598}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2051232602}
+          m_TargetAssemblyTypeName: GenericButtonTweener, Assembly-CSharp
+          m_MethodName: OnHoverExitTween
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2051232598}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &2051232602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051232596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111f2216bbce6ce4e8f17d64c06d38ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonHoverScale: 1.12
+  ButtonHoverScaleTime: 0.2
+  ButtonRotateAmount: 0
+  ButtonHoverScaleCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  audioSource: {fileID: 0}
 --- !u!1001 &2128062269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1349,7 +1685,7 @@ PrefabInstance:
     - target: {fileID: 114361574848870256, guid: 160be82451391f6448834ec65286e007, type: 3}
       propertyPath: tickAudioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 8ab9f96308f525a49a7ac7a50256d6ed, type: 3}
+      objectReference: {fileID: 8300000, guid: d8239aa94c9ba69448a68af4270f52bd, type: 3}
     - target: {fileID: 114361574848870256, guid: 160be82451391f6448834ec65286e007, type: 3}
       propertyPath: wheelPieces.Array.size
       value: 3
@@ -1357,11 +1693,15 @@ PrefabInstance:
     - target: {fileID: 114361574848870256, guid: 160be82451391f6448834ec65286e007, type: 3}
       propertyPath: wheelPieces.Array.data[0].Icon
       value: 
-      objectReference: {fileID: 21300002, guid: 6e980baa502e72148bbc79fb42c81d10, type: 3}
+      objectReference: {fileID: 21300000, guid: 60ff3ed206bd4f5439e6636e7da587bc, type: 3}
     - target: {fileID: 114361574848870256, guid: 160be82451391f6448834ec65286e007, type: 3}
       propertyPath: wheelPieces.Array.data[1].Icon
       value: 
-      objectReference: {fileID: 21300000, guid: 6e980baa502e72148bbc79fb42c81d10, type: 3}
+      objectReference: {fileID: 21300000, guid: 171c04dc5609b354caf4635d22aadac1, type: 3}
+    - target: {fileID: 114361574848870256, guid: 160be82451391f6448834ec65286e007, type: 3}
+      propertyPath: wheelPieces.Array.data[2].Icon
+      value: 
+      objectReference: {fileID: 21300000, guid: e747e78237550fa408f989aae1aeb3ec, type: 3}
     - target: {fileID: 114361574848870256, guid: 160be82451391f6448834ec65286e007, type: 3}
       propertyPath: wheelPieces.Array.data[5].Icon
       value: 
