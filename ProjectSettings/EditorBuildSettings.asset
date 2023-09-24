@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Final Scenes/21_Real_Game.unity
     guid: 569bd16805c6ed444b4d07d80a7408d4
+  - enabled: 1
+    path: Assets/Scenes/Final Scenes/22_EndScreen.unity
+    guid: 81db2ba44e288254ea66e9f185b124aa
   m_configObjects: {}
