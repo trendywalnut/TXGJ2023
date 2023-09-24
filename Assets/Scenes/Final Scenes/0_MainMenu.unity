@@ -1840,7 +1840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3758216312875607185, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
       propertyPath: m_text
-      value: TITLE
+      value: HOMELAND
       objectReference: {fileID: 0}
     - target: {fileID: 3758216312875607185, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
       propertyPath: m_fontSize

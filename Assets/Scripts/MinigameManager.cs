@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Diagnostics;
+using Debug = UnityEngine.Debug;
 
 public class MinigameManager : MonoBehaviour
 {

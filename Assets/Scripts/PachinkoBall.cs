@@ -15,6 +15,7 @@ public class PachinkoBall : MonoBehaviour
 
     [SerializeField] private AudioSource _as;
     [SerializeField] private AudioClip bumpSFX;
+    [SerializeField] private AudioClip explosionSFX;
 
     private void Start() 
     {
@@ -44,6 +45,7 @@ public class PachinkoBall : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         difficultyText.enabled = true;
         buttons.SetActive(true);
+        _as.PlayOneShot(explosionSFX);
         switch (other.tag)
         {
             case "EasyDifficulty":
