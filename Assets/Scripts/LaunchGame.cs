@@ -25,7 +25,7 @@ public class LaunchGame : MonoBehaviour
             StartCoroutine(EnableText(index));
         }
         else {
-            Debug.Log("move to next step");
+            MinigameManager.Instance.MoveToNextScene();
         }
     }
 }

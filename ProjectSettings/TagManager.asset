@@ -9,6 +9,8 @@ TagManager:
   - HardDifficulty
   - UltraDifficulty
   - Buttons
+  - Floor
+  - Trap
   layers:
   - Default
   - TransparentFX

@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Final Scenes/14_LoadingCrank.unity
     guid: 2ef356ab11ed98247894ec5c672c174a
   - enabled: 1
+    path: Assets/Scenes/Final Scenes/18_SnackBreakButtonMash.unity
+    guid: 21e28e3413bb62a45ab69bf5bbafd3db
+  - enabled: 1
     path: Assets/Scenes/Final Scenes/15_Crash.unity
     guid: 875ffa28ae04fec4aa234d235773c9e9
   - enabled: 1
@@ -36,9 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Final Scenes/17_CaptchaSlots.unity
     guid: 8de4ab7b6f1917d47b7907e2d657a9aa
   - enabled: 1
-    path: Assets/Scenes/Final Scenes/18_SnackBreakButtonMash.unity
-    guid: 21e28e3413bb62a45ab69bf5bbafd3db
-  - enabled: 1
     path: Assets/Scenes/Final Scenes/20_ValidationBarFill.unity
     guid: fd38df3f5b397f848a0f2023e6f83d57
+  - enabled: 1
+    path: Assets/Scenes/Final Scenes/21_Real_Game.unity
+    guid: 569bd16805c6ed444b4d07d80a7408d4
   m_configObjects: {}
