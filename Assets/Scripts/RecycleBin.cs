@@ -8,6 +8,9 @@ public class RecycleBin : MonoBehaviour//, IDragHandler
     [SerializeField] private List<File> Files;
     private RectTransform Rect;
 
+    [SerializeField] private AudioClip trashSound;
+    [SerializeField] private AudioSource audioSource;
+
     private void Awake()
     {
         Rect = GetComponent<RectTransform>();
@@ -27,6 +30,7 @@ public class RecycleBin : MonoBehaviour//, IDragHandler
         if (doesOverlap)
         {
             // TODO: play sfx
+            audioSource.PlayOneShot(trashSound);
             Files.Remove(file);
             Destroy(file.gameObject);
         }
