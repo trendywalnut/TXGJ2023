@@ -601,12 +601,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5504551426081987215, guid: 117861ac04064e94a93cd15e8245b6fd, type: 3}
       propertyPath: m_Type
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5504551426081987215, guid: 117861ac04064e94a93cd15e8245b6fd, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d380c00f3dba3cf4295085d39e019b3b, type: 3}
+      objectReference: {fileID: 21300000, guid: a8071c68d6df09d4480b8ec50ed5a17f, type: 3}
     - target: {fileID: 5528692082463727902, guid: 117861ac04064e94a93cd15e8245b6fd, type: 3}
       propertyPath: m_SizeDelta.x
       value: -12.091
