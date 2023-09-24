@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         CanJump = true;
+        MinigameManager.Instance.SetPlay(true);
     }
 
     // Update is called once per frame

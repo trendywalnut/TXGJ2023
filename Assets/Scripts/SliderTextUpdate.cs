@@ -42,5 +42,4 @@ public class SliderTextUpdate : MonoBehaviour
             sliderText.text = nonValueText + " I Was There When The Bombs Fell";
         }
     }
-
 }

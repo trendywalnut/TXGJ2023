@@ -51,6 +51,11 @@ public class MinigameManager : MonoBehaviour
     {
         var mixerValue = (value == 0) ? -80f : Mathf.Lerp(-20f, 0f, value * 0.01f);
         Audio.outputAudioMixerGroup.audioMixer.SetFloat("MasterVolume", mixerValue);
-        // Audio.volume = value * 0.01f;
+    }
+
+    public void SetPlay(bool play)
+    {
+        if (play && !Audio.isPlaying) Audio.Play();
+        else Audio.Stop();
     }
 }

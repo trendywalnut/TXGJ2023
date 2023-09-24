@@ -9,10 +9,7 @@ public class PopupHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 1; i < Popups.Count; ++i)
-        {
-            //Popups[i].SetActive(false);
-        }
+        MinigameManager.Instance.SetPlay(false);
     }
 
     public void RemovePopup(GameObject popup)
