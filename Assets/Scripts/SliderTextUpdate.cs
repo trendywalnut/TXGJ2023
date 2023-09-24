@@ -23,6 +23,8 @@ public class SliderTextUpdate : MonoBehaviour
 
     public void UpdateSliderTextNonValue() 
     {
+        MinigameManager.Instance?.UpdateVolume(slider.value);
+
         if (slider.value < 30) 
         {
             sliderText.text = nonValueText + " Loud Noises Scare Me";

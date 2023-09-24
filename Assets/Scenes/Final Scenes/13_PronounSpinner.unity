@@ -750,7 +750,7 @@ AudioSource:
   m_GameObject: {fileID: 552729116}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 8a283932ea121424eacdda42204ef9ba, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -851,7 +851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UIHover: {fileID: 8300000, guid: b4f6614e09249ac4297c4d3629295915, type: 3}
   UIClick: {fileID: 8300000, guid: cdd682850c67f4f48b841e9ecdee21f3, type: 3}
-  UI: {fileID: 0}
+  UIConfirm: {fileID: 0}
   _as: {fileID: 552729122}
 --- !u!1001 &665178785
 PrefabInstance:
@@ -1654,6 +1654,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PickerWheel
       objectReference: {fileID: 0}
+    - target: {fileID: 82771466526599974, guid: 160be82451391f6448834ec65286e007, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 8a283932ea121424eacdda42204ef9ba, type: 2}
     - target: {fileID: 114122180729214146, guid: 160be82451391f6448834ec65286e007, type: 3}
       propertyPath: m_Color.b
       value: 0.8867924

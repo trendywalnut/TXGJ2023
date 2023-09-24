@@ -23,9 +23,5 @@ public class PopupHandler : MonoBehaviour
         {
             MinigameManager.Instance.MoveToNextScene();
         }
-        else
-        {
-            Popups[0].SetActive(true);
-        }
     }
 }

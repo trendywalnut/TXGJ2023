@@ -46,4 +46,11 @@ public class MinigameManager : MonoBehaviour
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    public void UpdateVolume(float value)
+    {
+        var mixerValue = (value == 0) ? -80f : Mathf.Lerp(-20f, 0f, value * 0.01f);
+        Audio.outputAudioMixerGroup.audioMixer.SetFloat("MasterVolume", mixerValue);
+        // Audio.volume = value * 0.01f;
+    }
 }

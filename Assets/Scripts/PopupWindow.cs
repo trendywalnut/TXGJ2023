@@ -18,7 +18,7 @@ public class PopupWindow : MonoBehaviour
 
     public void OnClose()
     {
-        FindObjectOfType<PopupHandler>().RemovePopup(gameObject);
+        FindObjectOfType<PopupHandler>()?.RemovePopup(gameObject);
         Destroy(gameObject);
     }
 }
