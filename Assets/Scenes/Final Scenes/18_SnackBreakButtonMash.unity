@@ -182,8 +182,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Have a snack, you've earned it :)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 97b70b3a32ddf87418dcbb973b5e0e52, type: 2}
-  m_sharedMaterial: {fileID: -2880033965109791774, guid: 97b70b3a32ddf87418dcbb973b5e0e52, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 232ef041acf71a54fa95d8f95fcaf41d, type: 2}
+  m_sharedMaterial: {fileID: -6553948098948849575, guid: 232ef041acf71a54fa95d8f95fcaf41d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -863,7 +863,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8aa0abdb097841c4da7f8eee8aaa491c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a1ed15370736d824d8024cfd15e7633d, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
