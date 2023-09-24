@@ -11,7 +11,7 @@ public class PopupHandler : MonoBehaviour
     {
         for (int i = 1; i < Popups.Count; ++i)
         {
-            Popups[i].SetActive(false);
+            //Popups[i].SetActive(false);
         }
     }
 

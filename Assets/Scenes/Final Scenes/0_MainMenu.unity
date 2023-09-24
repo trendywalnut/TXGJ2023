@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0574a4b6d4f69354399be28f6ce4560a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MinigameScenesIndices: 00000000
+  MinigameScenesIndices: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
 --- !u!1 &1781861007
 GameObject:
   m_ObjectHideFlags: 0
