@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using System.Diagnostics;
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,14 +12,12 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rb;
     private bool CanJump;
-    private bool FacingRight;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         CanJump = true;
-        FacingRight = true;
     }
 
     // Update is called once per frame
@@ -25,7 +25,6 @@ public class PlayerController : MonoBehaviour
     {
         HorizontalMovement();
         Jump();
-        //FaceSprite();
     }
 
     private void HorizontalMovement()
@@ -45,20 +44,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void FaceSprite()
-    {
-        if (rb.velocity.x < 0 && FacingRight)
-        {
-            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
-            FacingRight = false;
-        }
-        else if (rb.velocity.x > 0 && !FacingRight)
-        {
-            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
-            FacingRight = true;
-        }
-    }
-
     private void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.tag == "Floor")
@@ -67,7 +52,9 @@ public class PlayerController : MonoBehaviour
         }
         if(other.gameObject.tag == "Trap")
         {
-            Debug.Log("THE END");
+            MinigameManager.Instance.Timer.Stop();
+            TimeSpan timeTaken = MinigameManager.Instance.Timer.Elapsed;
+            UnityEngine.Debug.Log("Elapsed time: " + string.Format("{0:00}:{1:00}:{2:00}", timeTaken.Hours, timeTaken.Minutes, timeTaken.Seconds));
         }    
     }
 }

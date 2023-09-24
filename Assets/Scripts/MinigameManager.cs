@@ -1,11 +1,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Diagnostics;
 
 public class MinigameManager : MonoBehaviour
 {
     public static MinigameManager Instance;
 
     private AudioSource Audio;
+
+    public Stopwatch Timer;
 
     private void Awake()
     {
@@ -29,6 +32,18 @@ public class MinigameManager : MonoBehaviour
     // Called from each mini game to advance to the next
     public void MoveToNextScene()
     {
+        if(Timer == null)
+        {
+            Timer = new Stopwatch();
+        }
+
+        if(!Timer.IsRunning)
+        {
+            
+            Timer.Reset();
+            Timer.Start();
+        }
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
