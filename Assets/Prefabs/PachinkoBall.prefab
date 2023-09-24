@@ -164,3 +164,4 @@ MonoBehaviour:
   difficultyText: {fileID: 0}
   textToShow: 
   buttons: {fileID: 0}
+  bumpForce: 5
