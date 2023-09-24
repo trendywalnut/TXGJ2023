@@ -27,13 +27,11 @@ public class LoadCrank : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
     public void OnBeginDrag(PointerEventData data)
     {
-        Debug.Log("Starting Drag!");
         Dragging = true;
     }
 
     public void OnEndDrag(PointerEventData data)
     {
-        Debug.Log("Ending Drag!");
         Dragging = false;
     }
 
