@@ -15,27 +15,29 @@ public class PachinkoBall : MonoBehaviour
         difficultyText = GameObject.Find("DifficultyText").GetComponent<TextMeshProUGUI>();
         buttons = GameObject.FindGameObjectWithTag("Buttons");
         buttons.SetActive(false);
+        difficultyText.enabled = false;
         difficultyText.text = "";    
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
+        difficultyText.enabled = true;
         buttons.SetActive(true);
         switch (other.tag)
         {
             case "EasyDifficulty":
-                textToShow = "Difficulty Selected:\nBaby's First Binky";
+                textToShow = "{diagexp}Difficulty Selected:\nBaby's First Binky{/diagexp}";
                 difficultyText.text = textToShow;
                 return;
             case "MediumDifficulty":
-                textToShow = "Difficulty Selected:\nI Can Game!";
+                textToShow = "{diagexp}Difficulty Selected:\nThis S*** Ain't Nothin' To Me Man!{/diagexp}";
                 difficultyText.text = textToShow;
                 return;
             case "HardDifficulty":
-                textToShow = "Difficulty Selected:\nI Beat Sekiro";
+                textToShow = "{diagexp}Difficulty Selected:\nI Beat Sekiro{/diagexp}";
                 difficultyText.text = textToShow;
                 return;
             case "UltraDifficulty":
-                textToShow = "Difficulty Selected:\nF*** My A**";
+                textToShow = "{diagexp}Difficulty Selected:\nF*** My A**{/diagexp}";
                 difficultyText.text = textToShow;
                 return;
             default:
