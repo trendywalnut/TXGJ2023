@@ -15,7 +15,7 @@ public class File : MonoBehaviour, IDragHandler, IEndDragHandler
 
     public void OnDrag(PointerEventData eventData)
     {
-        Rect.anchoredPosition += eventData.delta;
+        Rect.transform.position += new Vector3(eventData.delta.x, eventData.delta.y, 0.0f);
     }
 
     public void OnEndDrag(PointerEventData eventData)
