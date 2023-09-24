@@ -29,7 +29,6 @@ public class RecycleBin : MonoBehaviour//, IDragHandler
 
         if (doesOverlap)
         {
-            // TODO: play sfx
             audioSource.PlayOneShot(trashSound);
             Files.Remove(file);
             Destroy(file.gameObject);
