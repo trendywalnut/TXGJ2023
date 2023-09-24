@@ -5,18 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: Assets/Scenes/Skyrim.unity
-    guid: 681b96fb581fce942a4564e7e585e076
-  - enabled: 0
-    path: Assets/Scenes/Final Scenes/5-7_Texture, Depth of Field, Motion Blur.unity
-    guid: 25f30dc33658af84eb341dfe72d76486
   - enabled: 1
     path: Assets/Scenes/Final Scenes/0_MainMenu.unity
     guid: 7b2a879e937690748a68e056606ac9eb
+  - enabled: 1
+    path: Assets/Scenes/Final Scenes/2-4_Graphics, FOV, Volume.unity
+    guid: 08e999bf892cb5c45b3646b0f540aa94
+  - enabled: 1
+    path: Assets/Scenes/Final Scenes/5-7_Texture, Depth of Field, Motion Blur.unity
+    guid: 25f30dc33658af84eb341dfe72d76486
   - enabled: 1
     path: Assets/Scenes/Final Scenes/8_FontSize.unity
     guid: 81f39266c8c8fa147a71507dd6756c97
