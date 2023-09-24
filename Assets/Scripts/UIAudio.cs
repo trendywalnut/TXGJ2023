@@ -5,7 +5,7 @@ using UnityEngine;
 public class UIAudio : MonoBehaviour {
     [SerializeField] private AudioClip UIHover;
     [SerializeField] private AudioClip UIClick;
-    [SerializeField] private AudioClip UI;
+    [SerializeField] private AudioClip UIConfirm;
     
     [SerializeField] private AudioSource _as;
 
@@ -15,7 +15,7 @@ public class UIAudio : MonoBehaviour {
     public void PlayUIClick() {
         _as.PlayOneShot(UIClick);
     }
-    public void PlayUI() {
-        _as.PlayOneShot(UI);
+    public void PlayUIConfirm() {
+        _as.PlayOneShot(UIConfirm);
     }
 }
