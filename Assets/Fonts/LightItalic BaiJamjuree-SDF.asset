@@ -60,9 +60,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: LightItalic BaiJamjuree-SDF
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: 344836985
   material: {fileID: 8791557967162497999}
-  materialHashCode: 0
+  materialHashCode: 580829497
   m_Version: 1.1.0
   m_SourceFontFileGUID: add721ec0e17fd14e8a232e9437357d5
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: add721ec0e17fd14e8a232e9437357d5, type: 3}
@@ -2743,9 +2743,9 @@ Material:
     - _OutlineWidth: 0
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
-    - _ScaleRatioA: 1
-    - _ScaleRatioB: 1
-    - _ScaleRatioC: 1
+    - _ScaleRatioA: 0.8333333
+    - _ScaleRatioB: 0.6770833
+    - _ScaleRatioC: 0.6770833
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0

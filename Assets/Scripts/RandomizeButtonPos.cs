@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class RandomizeButtonPos : MonoBehaviour
 {
-    private Button thisButton;
+    [SerializeField] Button thisButton;
 
     private float xPos;
     private float yPos;
@@ -13,15 +13,16 @@ public class RandomizeButtonPos : MonoBehaviour
 
     void Start()
     {
-        thisButton = GetComponent<Button>();
+        //thisButton = GetComponent<Button>();
         RectTransform rectTransform = GetComponent<RectTransform>();
 
         thisButton.onClick.AddListener(() =>
         {
             xPos = Random.Range(-325, 325);
-            yPos = Random.Range(-180, 180);
+            yPos = Random.Range(-180, 80);
 
             rectTransform.localPosition = new Vector2(xPos, yPos);
+            //transform.position = new Vector2(xPos, yPos);
         });
     }
 
