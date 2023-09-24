@@ -3037,7 +3037,13 @@ PrefabInstance:
       value: Desktop Background
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7590567330769807134, guid: 264253be4b430f443a1fa4a9b85c3dfa, type: 3}
+    - {fileID: 7630051808585917148, guid: 264253be4b430f443a1fa4a9b85c3dfa, type: 3}
+    - {fileID: 5808521345964733610, guid: 264253be4b430f443a1fa4a9b85c3dfa, type: 3}
+    - {fileID: 8383428133922239159, guid: 264253be4b430f443a1fa4a9b85c3dfa, type: 3}
+    - {fileID: 3786354842718389504, guid: 264253be4b430f443a1fa4a9b85c3dfa, type: 3}
+    - {fileID: 6379284435227158860, guid: 264253be4b430f443a1fa4a9b85c3dfa, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 264253be4b430f443a1fa4a9b85c3dfa, type: 3}
