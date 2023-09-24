@@ -9,11 +9,12 @@ public class Pachinko : MonoBehaviour
     [SerializeField] private GameObject[] _Spinners;
     void Start()
     {
-        for(int i = 0; i <100; i++)
+        GameObject.Instantiate(_PachinkoBall, new Vector3(Random.Range(-4.4f, 4.4f), 4.5f, 0), Quaternion.identity);
+        /* for(int i = 0; i <100; i++)
         {
 
             GameObject.Instantiate(_PachinkoBall, new Vector3(Random.Range(-4.4f, 4.4f), 4.5f, 0), Quaternion.identity);
-        }
+        } */
         StartCoroutine(Spinner());
     }
 
