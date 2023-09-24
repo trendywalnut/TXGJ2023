@@ -35,7 +35,7 @@ public class Pachinko : Singleton<Pachinko>
         _ballRigidbody.isKinematic = false;
         _DropButton.SetActive(false);
     }
-    void LateUpdate()
+    void FixedUpdate()
     {
         if(!_ballDropped)
         {
@@ -61,11 +61,11 @@ public class Pachinko : Singleton<Pachinko>
         {
             if(spinner % 2 == 0)
             {
-                _SpinnersArray[spinner].AddTorque(5f);
+                _SpinnersArray[spinner].AddTorque(30f);
             }
             else
             {
-                _SpinnersArray[spinner].AddTorque(-5f);
+                _SpinnersArray[spinner].AddTorque(-30f);
             }
         }
         // foreach(GameObject spinner in _Spinners)
