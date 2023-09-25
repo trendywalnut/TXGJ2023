@@ -1110,7 +1110,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &913166839
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1932,6 +1932,10 @@ PrefabInstance:
     - target: {fileID: 7572867960231476397, guid: 117861ac04064e94a93cd15e8245b6fd, type: 3}
       propertyPath: m_Name
       value: TextureQuality
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614443157855975661, guid: 117861ac04064e94a93cd15e8245b6fd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7857292473013424439, guid: 117861ac04064e94a93cd15e8245b6fd, type: 3}
       propertyPath: m_text
