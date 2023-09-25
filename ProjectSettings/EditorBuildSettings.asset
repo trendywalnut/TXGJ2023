@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Final Scenes/8_FontSize.unity
     guid: 81f39266c8c8fa147a71507dd6756c97
   - enabled: 1
+    path: Assets/Scenes/Final Scenes/10_Name.unity
+    guid: dab5fed14a3d4354c87ce81e4516f38d
+  - enabled: 1
     path: Assets/Scenes/Final Scenes/12_Difficulty.unity
     guid: 6fae8e9a5d681df479d87d0c0cadb613
   - enabled: 1
