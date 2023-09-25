@@ -1161,119 +1161,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1807484779 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7022324070098787708, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
-  m_PrefabInstance: {fileID: 8980002450264579720}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1807484781 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6095859716602067503, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
-  m_PrefabInstance: {fileID: 8980002450264579720}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1807484779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1807484784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1807484779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1725856639}
-          m_TargetAssemblyTypeName: GenericButtonTweener, Assembly-CSharp
-          m_MethodName: OnHoverEnterTween
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 1807484781}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 225334373}
-          m_TargetAssemblyTypeName: UIAudio, Assembly-CSharp
-          m_MethodName: PlayUIHover
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1725856639}
-          m_TargetAssemblyTypeName: GenericButtonTweener, Assembly-CSharp
-          m_MethodName: OnHoverExitTween
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 1807484781}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!114 &1807484785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1807484779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 111f2216bbce6ce4e8f17d64c06d38ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ButtonHoverScale: 1.12
-  ButtonHoverScaleTime: 0.2
-  ButtonRotateAmount: 0
-  ButtonHoverScaleCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  audioSource: {fileID: 0}
 --- !u!1 &1871874485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1342,82 +1229,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2008299120 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1296915946855898885, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
-  m_PrefabInstance: {fileID: 8980002450264579720}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2008299124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2008299120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8ace8ced0e81c847968cdca0aeda757, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  typewriterStartsAutomatically: 1
-  animationLoop: 0
-  timeScale: 0
-  _text: '[credits]'
-  useDynamicScaling: 1
-  referenceFontSize: 10
-  isResettingTimeOnNewText: 1
-  useDefaultDatabases: 1
-  databaseBehaviors: {fileID: 11400000, guid: c73dc777db551e045a54996d4b50d9b7, type: 2}
-  databaseAppearances: {fileID: 11400000, guid: db641896868f85a4496c92d0735fe789, type: 2}
-  databaseActions: {fileID: 11400000, guid: 5fa9a866c8203084db94d57b38789525, type: 2}
-  defaultAppearancesTags:
-  - fade d=3
-  defaultDisappearancesTags:
-  - fade
-  defaultBehaviorsTags: []
-  defaultTagsMode: 0
---- !u!114 &2008299125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2008299120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57a6945b90dcd0c4b81619c0d8b5c283, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  useTypeWriter: 1
-  startTypewriterMode: 3
-  hideAppearancesOnSkip: 0
-  triggerEventsOnSkip: 0
-  resetTypingSpeedAtStartup: 1
-  disappearanceOrientation: 0
-  onTextShowed:
-    m_PersistentCalls:
-      m_Calls: []
-  onTypewriterStart:
-    m_PersistentCalls:
-      m_Calls: []
-  onTextDisappeared:
-    m_PersistentCalls:
-      m_Calls: []
-  onCharacterVisible:
-    m_PersistentCalls:
-      m_Calls: []
-  onMessage:
-    m_PersistentCalls:
-      m_Calls: []
-  waitForNormalChars: 0.03
-  waitLong: 0.6
-  waitMiddle: 0.2
-  avoidMultiplePunctuactionWait: 0
-  waitForNewLines: 1
-  waitForLastCharacter: 1
-  useTypewriterWaitForDisappearances: 1
-  disappearanceWaitTime: 0.015
-  disappearanceSpeedMultiplier: 1
 --- !u!1 &2104875264
 GameObject:
   m_ObjectHideFlags: 0
@@ -1724,7 +1535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2789664397564720934, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -42.1
+      value: 5.2
       objectReference: {fileID: 0}
     - target: {fileID: 2911492645439167237, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
       propertyPath: m_IsActive
@@ -1773,6 +1584,14 @@ PrefabInstance:
     - target: {fileID: 3122054065342978486, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 62.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3128187559825186231, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3240093020327732833, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3259372392235398030, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
       propertyPath: m_Name
@@ -1837,10 +1656,6 @@ PrefabInstance:
     - target: {fileID: 3734568088766094806, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3758216312875607185, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
-      propertyPath: m_text
-      value: HOMELAND
       objectReference: {fileID: 0}
     - target: {fileID: 3758216312875607185, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
       propertyPath: m_fontSize
@@ -2082,26 +1897,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -92.8
       objectReference: {fileID: 0}
-    - target: {fileID: 4946487604833145489, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
-      propertyPath: UIButtons.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4946487604833145489, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
-      propertyPath: UIButtons.Array.data[0]
-      value: 
-      objectReference: {fileID: 806344289}
-    - target: {fileID: 4946487604833145489, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
-      propertyPath: UIButtons.Array.data[1]
-      value: 
-      objectReference: {fileID: 1725856636}
-    - target: {fileID: 4946487604833145489, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
-      propertyPath: UIButtons.Array.data[2]
-      value: 
-      objectReference: {fileID: 1807484779}
-    - target: {fileID: 4946487604833145489, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
-      propertyPath: UIButtons.Array.data[3]
-      value: 
-      objectReference: {fileID: 2125691207}
     - target: {fileID: 6095859716602067503, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -2300,18 +2095,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3128187559825186231, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
       insertIndex: -1
       addedObject: {fileID: 54674199}
-    - targetCorrespondingSourceObject: {fileID: 7022324070098787708, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1807484785}
-    - targetCorrespondingSourceObject: {fileID: 7022324070098787708, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1807484784}
-    - targetCorrespondingSourceObject: {fileID: 1296915946855898885, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2008299124}
-    - targetCorrespondingSourceObject: {fileID: 1296915946855898885, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2008299125}
     - targetCorrespondingSourceObject: {fileID: 8906921532556824743, guid: 0bc4e51754829b54b8d3a9e392e01536, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2125691213}
