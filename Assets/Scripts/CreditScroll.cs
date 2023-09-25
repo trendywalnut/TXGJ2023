@@ -18,7 +18,7 @@ public class CreditScroll : MonoBehaviour
         Invoke("ShowExitButton", timeForExit);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (isScrolling)
         {

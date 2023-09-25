@@ -845,7 +845,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToWait: 2
   timeForExit: 15
-  scrollSpeed: 0.25
+  scrollSpeed: 5
   exitButton: {fileID: 514000866}
 --- !u!1 &1004816429
 GameObject:
