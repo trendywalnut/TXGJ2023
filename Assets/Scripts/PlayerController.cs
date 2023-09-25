@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
         {
             MinigameManager.Instance.Timer.Stop();
             TimeSpan timeTaken = MinigameManager.Instance.Timer.Elapsed;
+            MinigameManager.Instance.ElapsedTime = timeTaken;
             UnityEngine.Debug.Log("Elapsed time: " + string.Format("{0:00}:{1:00}:{2:00}", timeTaken.Hours, timeTaken.Minutes, timeTaken.Seconds));
             MinigameManager.Instance.MoveToNextScene();
         }    

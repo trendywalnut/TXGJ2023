@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Diagnostics;
@@ -10,6 +11,7 @@ public class MinigameManager : MonoBehaviour
     private AudioSource Audio;
 
     public Stopwatch Timer;
+    public TimeSpan ElapsedTime;
 
     private void Awake()
     {
